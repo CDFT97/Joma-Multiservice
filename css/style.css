@@ -84,6 +84,7 @@ h4 {
   text-transform: uppercase;
   padding: 19px 37px;
   letter-spacing: 0.2em;
+  border-radius: 5px;
 }
 .btn-default:hover {
   background: #48c0db;
@@ -189,7 +190,7 @@ h4 {
   text-align: center;
   display: block;
   border-radius: 100px;
-  background: #bcbbc1;
+  background: #25D366;
   width: 50px;
   height: 50px;
 }
@@ -263,10 +264,10 @@ h1 a:before {
   top: 0;
   height: 100%;
   width: 125px;
-  background: #eb1a2f;
+  background: #00a1ff;
   color: #ffffff;
-  content: 'S.';
-  font: 400 85px/128px "Damion", sans-serif;
+  content: 'JM';
+  font: 400 65px/128px "Damion", sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.025em;
 }
@@ -281,7 +282,7 @@ h1 a span {
 }
 h1 a .first {
   font: 700 12px/12px "Asap", sans-serif;
-  color: #eb1a2f;
+  color: #00a1ff;
   margin-bottom: -8px;
   text-transform: uppercase;
 }
@@ -293,7 +294,7 @@ h1 a .first {
 }
 h1 a .second {
   font: 700 73px/73px "Asap", sans-serif;
-  color: #eb1a2f;
+  color: #00a1ff;
   text-transform: uppercase;
   letter-spacing: -0.025em;
   margin-left: -4px;
@@ -658,6 +659,7 @@ body.hashAncor #content {
   background: #67b14b;
   text-align: center;
   color: #ffffff;
+  border-radius: 5px;
 }
 .box5 .heading {
   font: 900 33px/33px "Lato", sans-serif;
@@ -960,3 +962,21 @@ body.hashAncor #content {
   }
 }
 /*Core variables and mixins*/
+.text-blue {
+  color: #00a1ff !important;
+}
+.text-black {
+  color: #000000 !important;
+}
+.text-gray {
+  color: #919191 !important;
+}
+.flex {
+  display: flex;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.mb-2 {
+  margin-bottom: 2em !important;
+}

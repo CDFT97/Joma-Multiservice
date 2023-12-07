@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name = "format-detection" content = "telephone=no" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/stellar.css">
+  <link rel="stylesheet" href="css/camera.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/touchTouch.css">
+  <link rel="stylesheet" href="css/contact-form.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+  <script src="js/jquery.equalheights.js"></script>
+  <script src="js/camera.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/touchTouch.jquery.js"></script>
+  <script src="js/TMForm.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="search/search.js"></script>
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  <script src="js/wow/wow.js"></script>
+  <script>
+    $(document).ready(function () {
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }
+    });
+  </script>
+  <!--<![endif]-->
+  <script>
+    $(document).ready(function () {
+      var state = 0;
+      document.getElementById('icon').onclick = function() {
+        if (state == 1) {
+          document.getElementById('search').style.display = 'none';
+          state = 0;
+          return;
+        }
+        document.getElementById('search').style.display = 'block';
+        state = 1;
+      };
+      $('#camera_wrap').camera({
+        loader: true,
+        pagination: false,
+        minHeight: '',
+        thumbnails: false,
+        height: '37.60416666666667%',
+        caption: true,
+        navigation: true,
+        fx: 'simpleFade',
+        onLoaded: function () {
+          $('.slider-wrapper')[0].style.height = 'auto';
+        }
+      });
+      $("#owl").owlCarousel({
+        items: 2, //10 items above 1000px browser width
+        itemsDesktop: [1199, 2], //5 items between 1000px and 901px
+        itemsDesktopSmall: [750, 1], // betweem 900px and 601px
+        itemsTablet: [700, 1], //2 items between 600 and 0
+        itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+        navigation: false,
+        pagination: true
+      });
+      $('.gallery a').touchTouch();
+    });
+  </script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <div id="ie6-alert" style="width: 100%; text-align:center; margin-top: 125px;">
+    <link rel="stylesheet" type="text/css" href="css/ie.css"/>
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+    <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+      <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+    </map>
+  </div>
+  <![endif]-->
+</head>
+
+
+<body class="home">
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+  <div id="stuck_container">
+    <div class="wrapper">
+      <h1>
+        <a href="index.html">
+          <span class="first">pool maintenance</span>
+          <span class="second">paradiso</span>
+        </a>
+      </h1>
+      <div class="search-block" id="search-block">
+        <div class="icon" id="icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <form id="search" action="search.php" method="GET" accept-charset="utf-8">
+          <input type="text" name="s" placeholder="Enter keyword:"/>
+          <a onclick="document.getElementById('search').submit()"><div class="search_icon"></div>
+          </a>
+        </form>
+      </div>
+      <nav>
+        <ul class="sf-menu">
+          <li><a href="#about">About us</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</header>
+
+
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+  <div class="slider-wrapper">
+    <div id="camera_wrap">
+      <div data-src="images/slider1.png">
+        <div class="caption fadeIn">
+          <span class="first">Pool<br>maintenance</span>
+          <div class="container">
+            <div class="row">
+              <div class="grid_6 preffix_3">
+                <span class="second">We provide services for all sizes of commercial
+or community swimming pools</span>
+                <address class="phone"><i class="fa fa-phone"></i>+1 959 603 6035</address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-src="images/slider2.png">
+        <div class="caption fadeIn">
+          <span class="first">Pool<br>maintenance</span>
+          <div class="container">
+            <div class="row">
+              <div class="grid_6 preffix_3">
+                <span class="second">We provide services for all sizes of commercial
+or community swimming pools</span>
+                <address class="phone"><i class="fa fa-phone"></i>+1 959 603 6035</address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-src="images/slider3.png">
+        <div class="caption fadeIn">
+          <span class="first">Pool<br>maintenance</span>
+          <div class="container">
+            <div class="row">
+              <div class="grid_6 preffix_3">
+                <span class="second">We provide services for all sizes of commercial
+or community swimming pools</span>
+                <address class="phone"><i class="fa fa-phone"></i>+1 959 603 6035</address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div id="about" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
+  <div class="wrapper1">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="heading1 wow flipInX" data-wow-delay="0.1s" data-wow-duration="1s">
+            <h2>About us</h2>
+            <span class="second">Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid_3">
+          <div class="box1">
+            <a class="label wow flipInY" data-wow-duration="1s" data-wow-delay="0.1s" href="#">
+              <i class="fa fa-clock-o"></i>
+              <h3>How often?</h3>
+            </a>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">Vivamus eget nibam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipmis in faucibus orci luctus et ultrices pe cubilia Curae; Suspendisse sollicitudin.</p>
+          </div>
+        </div>
+
+        <div class="grid_3">
+          <div class="box1">
+            <a class="label wow flipInY" data-wow-duration="1s" data-wow-delay="0.2s" href="#">
+              <i class="fa fa-star"></i>
+              <h3>Best of them</h3>
+            </a>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Vivamus eget nibam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipmis in faucibus orci luctus et ultrices pe cubilia Curae; Suspendisse sollicitudin.</p>
+          </div>
+        </div>
+
+        <div class="grid_3">
+          <div class="box1">
+            <a class="label wow flipInY" data-wow-duration="1s" data-wow-delay="0.3s" href="#">
+              <i class="fa fa-thumbs-o-up"></i>
+              <h3>be satisfied</h3>
+            </a>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Vivamus eget nibam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipmis in faucibus orci luctus et ultrices pe cubilia Curae; Suspendisse sollicitudin.</p>
+          </div>
+        </div>
+
+        <div class="grid_3">
+          <div class="box1">
+            <a class="label wow flipInY" data-wow-duration="1s" data-wow-delay="0.4s" href="#">
+              <i class="fa fa-cogs"></i>
+              <h3>services</h3>
+            </a>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Vivamus eget nibam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipmis in faucibus orci luctus et ultrices pe cubilia Curae; Suspendisse sollicitudin.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stellar-block banner1" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <blockquote class="blockquote1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+            <div class="quote"><img src="images/quote1.png" alt=""/></div>
+            <cite>We provide pool maintenance services to commercial properties with<br>pools, fountains and water features.</cite>
+            <span class="by"><a href="#">Roger Taylor</a>, our best specialist.</span>
+          </blockquote>
+          <a class="btn-default wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" href="#">read our tips & advice</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="team" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
+  <div class="wrapper2">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="heading1 wow flipInX" data-wow-delay="0.1s" data-wow-duration="1s">
+            <h2>Meet the team</h2>
+            <span class="second">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid_4">
+          <div class="box2 maxheight">
+            <img src="images/page1_img2.png" alt="" class="wow flipInY" data-wow-duration="1s" data-wow-delay="0.1s"/>
+            <h3>
+              <a href="#">Robert Smith</a>
+            </h3>
+            <ul class="socials1">
+              <li class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.1s"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.2s"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.3s"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">Vivamus eget nibam cus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipmis in fauci luctus et ultrices pe cubilia Curae uspendi.</p>
+          </div>
+        </div>
+
+        <div class="grid_4">
+          <div class="box2 maxheight">
+            <img src="images/page1_img3.png" alt="" class="wow flipInY" data-wow-duration="1s" data-wow-delay="0.2s"/>
+            <h3>
+              <a href="#">Andy Taylor</a>
+            </h3>
+            <ul class="socials1">
+              <li class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.2s"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.4s"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Vivamus eget nibam cus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipmis in fauci luctus et ultrices pe cubilia Curae uspendi.</p>
+          </div>
+        </div>
+
+        <div class="grid_4">
+          <div class="box2 maxheight">
+            <img src="images/page1_img4.png" alt="" class="wow flipInY" data-wow-duration="1s" data-wow-delay="0.3s"/>
+            <h3>
+              <a href="#">Sam White</a>
+            </h3>
+            <ul class="socials1">
+              <li class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.3s"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.4s"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.5s"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Vivamus eget nibam cus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipmis in fauci luctus et ultrices pe cubilia Curae uspendi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner2">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="heading wow flipInX" data-wow-duration="1s" data-wow-delay="0.1s">What we are proud of</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid_4">
+          <div class="box3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+            <span class="first">128</span>
+            <span class="second">Pools cleaned</span>
+          </div>
+        </div>
+
+        <div class="grid_4">
+          <div class="box3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+            <span class="first">357</span>
+            <span class="second">Happy clients</span>
+          </div>
+        </div>
+
+        <div class="grid_4">
+          <div class="box3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+            <span class="first">16,000</span>
+            <span class="second">Dollars earned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="news" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
+  <div class="stellar-block banner3" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="heading1 wow flipInX" data-wow-delay="0.1s" data-wow-duration="1s">
+            <h2>News</h2>
+            <span class="second">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="owl">
+          <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+            <div class="grid_6">
+              <div class="post1 maxheight1">
+                <div class="content">
+                  <img src="images/page1_img6.png" alt=""/>
+                  <time datetime="2014-01-01">12/08/2014</time>
+                  <h3>
+                    <a href="#">pharetra augue nec augue</a>
+                  </h3>
+                  <p>Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="grid_6">
+              <div class="post1 maxheight1">
+                <div class="content">
+                  <img src="images/page1_img7.png" alt=""/>
+                  <time datetime="2014-01-01">17/08/2014</time>
+                  <h3>
+                    <a href="#">pharetra augue nec augue</a>
+                  </h3>
+                  <p>Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="grid_6">
+              <div class="post1 maxheight1">
+                <div class="content">
+                  <img src="images/page1_img6.png" alt=""/>
+                  <time datetime="2014-01-01">12/08/2014</time>
+                  <h3>
+                    <a href="#">pharetra augue nec augue</a>
+                  </h3>
+                  <p>Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="grid_6">
+              <div class="post1 maxheight1">
+                <div class="content">
+                  <img src="images/page1_img7.png" alt=""/>
+                  <time datetime="2014-01-01">17/08/2014</time>
+                  <h3>
+                    <a href="#">pharetra augue nec augue</a>
+                  </h3>
+                  <p>Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="grid_6">
+              <div class="post1 maxheight1">
+                <div class="content">
+                  <img src="images/page1_img6.png" alt=""/>
+                  <time datetime="2014-01-01">12/08/2014</time>
+                  <h3>
+                    <a href="#">pharetra augue nec augue</a>
+                  </h3>
+                  <p>Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="grid_6">
+              <div class="post1 maxheight1">
+                <div class="content">
+                  <img src="images/page1_img7.png" alt=""/>
+                  <time datetime="2014-01-01">17/08/2014</time>
+                  <h3>
+                    <a href="#">pharetra augue nec augue</a>
+                  </h3>
+                  <p>Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
+  <div class="wrapper3">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="heading1 wow flipInX" data-wow-delay="0.1s" data-wow-duration="1s">
+            <h2>Our services</h2>
+            <span class="second">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid_6">
+          <div class="box4">
+            <i class="fa fa-group wow flip" data-wow-duration="1s" data-wow-delay="0.1s"></i>
+            <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+              <a href="#">consectetuer</a>
+            </h4>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">Lorem ipsum dolor sit amet, consuer ad. Fuscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+          </div>
+        </div>
+        <div class="grid_6">
+          <div class="box4">
+            <i class="fa fa-leaf wow flip" data-wow-duration="1s" data-wow-delay="0.2s"></i>
+            <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="#">Praesent</a>
+            </h4>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consuer ad. Fuscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid_6">
+          <div class="box4">
+            <i class="fa fa-lightbulb-o wow flip" data-wow-duration="1s" data-wow-delay="0.1s"></i>
+            <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+              <a href="#">adipiscing elit</a>
+            </h4>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">Lorem ipsum dolor sit amet, consuer ad. Fuscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+          </div>
+        </div>
+        <div class="grid_6">
+          <div class="box4">
+            <i class="fa fa-truck wow flip" data-wow-duration="1s" data-wow-delay="0.2s"></i>
+            <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="#">elibulum moles</a>
+            </h4>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consuer ad. Fuscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pricing" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
+  <div class="wrapper4">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="heading1 wow flipInX" data-wow-delay="0.1s" data-wow-duration="1s">
+            <h2>Pricing</h2>
+            <span class="second">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid_3">
+          <div class="box5 wow flipInY" data-wow-duration="1s" data-wow-delay="0.1s">
+            <span class="heading">Plan 1</span>
+            <div class="price"><span class="symbol">$</span><span class="big">45</span><span class="low">.99/month</span></div>
+            <ul class="list1">
+              <li>
+                <a href="#">Lorem ipsum dolor sit amet,</a>
+              </li>
+              <li>
+                <a href="#">consuer adipiscing elit. Praesent</a>
+              </li>
+              <li>
+                <a href="#">vestibulum molestie lacus.</a>
+              </li>
+              <li>
+                <a href="#">Aenean nonummy hendrerit</a>
+              </li>
+              <li>
+                <a href="#">mauris. Phasellus porta.</a>
+              </li>
+            </ul>
+            <a class="btn-default btn-default__inset1" href="#">Sign up</a>
+          </div>
+        </div>
+
+        <div class="grid_3">
+          <div class="box5 box5__inset1 wow flipInY" data-wow-duration="1s" data-wow-delay="0.2s">
+            <span class="heading">Plan 2</span>
+            <div class="price"><span class="symbol">$</span><span class="big">59</span><span class="low">.99/month</span></div>
+            <ul class="list1">
+              <li>
+                <a href="#">Lorem ipsum dolor sit amet,</a>
+              </li>
+              <li>
+                <a href="#">consuer adipiscing elit. Praesent</a>
+              </li>
+              <li>
+                <a href="#">vestibulum molestie lacus.</a>
+              </li>
+              <li>
+                <a href="#">Aenean nonummy hendrerit</a>
+              </li>
+              <li>
+                <a href="#">mauris. Phasellus porta.</a>
+              </li>
+            </ul>
+            <a class="btn-default btn-default__inset1" href="#">Sign up</a>
+          </div>
+        </div>
+
+        <div class="grid_3">
+          <div class="box5 box5__inset2 wow flipInY" data-wow-duration="1s" data-wow-delay="0.3s">
+            <span class="heading">Plan 3</span>
+            <div class="price"><span class="symbol">$</span><span class="big">64</span><span class="low">.99/month</span></div>
+            <ul class="list1">
+              <li>
+                <a href="#">Lorem ipsum dolor sit amet,</a>
+              </li>
+              <li>
+                <a href="#">consuer adipiscing elit. Praesent</a>
+              </li>
+              <li>
+                <a href="#">vestibulum molestie lacus.</a>
+              </li>
+              <li>
+                <a href="#">Aenean nonummy hendrerit</a>
+              </li>
+              <li>
+                <a href="#">mauris. Phasellus porta.</a>
+              </li>
+            </ul>
+            <a class="btn-default btn-default__inset1" href="#">Sign up</a>
+          </div>
+        </div>
+
+        <div class="grid_3">
+          <div class="box5 box5__inset3 wow flipInY" data-wow-duration="1s" data-wow-delay="0.4s">
+            <span class="heading">Plan 4</span>
+            <div class="price"><span class="symbol">$</span><span class="big">89</span><span class="low">.99/month</span></div>
+            <ul class="list1">
+              <li>
+                <a href="#">Lorem ipsum dolor sit amet,</a>
+              </li>
+              <li>
+                <a href="#">consuer adipiscing elit. Praesent</a>
+              </li>
+              <li>
+                <a href="#">vestibulum molestie lacus.</a>
+              </li>
+              <li>
+                <a href="#">Aenean nonummy hendrerit</a>
+              </li>
+              <li>
+                <a href="#">mauris. Phasellus porta.</a>
+              </li>
+            </ul>
+            <a class="btn-default btn-default__inset1" href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="portfolio" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
+  <div class="wrapper5">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="heading1 wow flipInX" data-wow-delay="0.1s" data-wow-duration="1s">
+            <h2>OUr portfolio</h2>
+            <span class="second">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+        <a href="images/gallery1.jpg">
+          <img src="images/page1_img8.png" alt=""/>
+          <div class="gallery_icon"><i class="fa fa-search"></i></div>
+        </a>
+      </div>
+      <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+        <a href="images/gallery2.jpg">
+          <img src="images/page1_img9.png" alt=""/>
+          <div class="gallery_icon"><i class="fa fa-search"></i></div>
+        </a>
+      </div>
+      <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+        <a href="images/gallery3.jpg">
+          <img src="images/page1_img10.png" alt=""/>
+          <div class="gallery_icon"><i class="fa fa-search"></i></div>
+        </a>
+      </div>
+      <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+        <a href="images/gallery4.jpg">
+          <img src="images/page1_img11.png" alt=""/>
+          <div class="gallery_icon"><i class="fa fa-search"></i></div>
+        </a>
+      </div>
+      <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+        <a href="images/gallery5.jpg">
+          <img src="images/page1_img12.png" alt=""/>
+          <div class="gallery_icon"><i class="fa fa-search"></i></div>
+        </a>
+      </div>
+      <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+        <a href="images/gallery6.jpg">
+          <img src="images/page1_img13.png" alt=""/>
+          <div class="gallery_icon"><i class="fa fa-search"></i></div>
+        </a>
+      </div>
+      <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+        <a href="images/gallery7.jpg">
+          <img src="images/page1_img14.png" alt=""/>
+          <div class="gallery_icon"><i class="fa fa-search"></i></div>
+        </a>
+      </div>
+      <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+        <a href="images/gallery8.jpg">
+          <img src="images/page1_img15.png" alt=""/>
+          <div class="gallery_icon"><i class="fa fa-search"></i></div>
+        </a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div id="contacts" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
+  <div class="wrapper6">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="heading1 wow flipInX" data-wow-delay="0.1s" data-wow-duration="1s">
+            <h2>Write us a letter</h2>
+            <span class="second">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid_12">
+          <form id="contact-form">
+            <div class="contact-form-loader"></div>
+            <fieldset>
+              <div class="row">
+                <div class="grid_12">
+                  <label class="name wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <input type="text" name="name" placeholder="Your Name" data-constraints="@Required @JustLetters"/>
+                    <span class="empty-message">*This field is required.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="grid_6">
+                  <label class="email wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <input type="text" name="email" placeholder="Your Email" value=""
+                           data-constraints="@Required @Email"/>
+                    <span class="empty-message">*This field is required.</span>
+                    <span class="error-message">*This is not a valid email.</span>
+                  </label>
+                </div>
+                <div class="grid_6">
+                  <label class="phone wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <input type="text" name="phone" placeholder="Your Phone Number" value=""
+                           data-constraints="@Required @JustNumbers"/>
+                    <span class="empty-message">*This field is required.</span>
+                    <span class="error-message">*This is not a valid phone.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="grid_12">
+                  <label class="message wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <textarea name="message" placeholder="Your Message"
+                              data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                    <span class="empty-message">*This field is required.</span>
+                    <span class="error-message">*The message is too short.</span>
+                  </label>
+                </div>
+              </div>
+              <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+
+              <div class="row">
+                <div class="grid_4 preffix_4">
+                  <div class="contact-form-buttons">
+                    <a data-type="submit" class="btn-default btn-default__inset2 wow flipInX" data-wow-delay="0.5s" data-wow-duration="1s">Send</a>
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner4">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <ul>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+              <a href="#">
+                <img src="images/page1_img16.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="#">
+                <img src="images/page1_img17.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <a href="#">
+                <img src="images/page1_img18.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <a href="#">
+                <img src="images/page1_img19.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+              <a href="#">
+                <img src="images/page1_img20.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+              <a href="#">
+                <img src="images/page1_img21.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+              <a href="#">
+                <img src="images/page1_img22.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+              <a href="#">
+                <img src="images/page1_img23.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+              <a href="#">
+                <img src="images/page1_img24.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+              <a href="#">
+                <img src="images/page1_img25.png" alt=""/>
+              </a>
+            </li>
+            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
+              <a href="#">
+                <img src="images/page1_img26.png" alt=""/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper7">
+    <div class="container">
+      <div class="row">
+        <div class="grid_8 preffix_2">
+          <div class="heading1 wow flipInX" data-wow-delay="0.1s" data-wow-duration="1s">
+            <h2>Contact us</h2>
+            <span class="second">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros</span>
+          </div>
+          <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">Gratuitous octopus niacin, sodium glutimate. Quote ruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid_12">
+          <ul class="socials2">
+            <li>
+              <a href="#"><i class="fa fa-twitter wow rotateIn" data-wow-delay="0.1s" data-wow-duration="1s"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-facebook wow rotateIn" data-wow-delay="0.2s" data-wow-duration="1s"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus wow rotateIn" data-wow-delay="0.3s" data-wow-duration="1s"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="privacy-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+            <a href="index.html">PARADISO pool maintenance</a> &copy; <span id="copyright-year"></span> <a
+                  href="privacy.html">Privacy policy</a>
+            <!--{%FOOTER_LINK} -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="google-map_contacts wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094"
+          style="border:0"></iframe>
+</div>
+<div class="modal fade response-message">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        You message has been sent! We will be in touch soon.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

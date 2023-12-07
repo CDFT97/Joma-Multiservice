@@ -1,0 +1,106 @@
+/* ======= Main menu variables ======= */
+/* ======= Sub menus common variables ======= */
+nav {
+  float: right;
+  margin-top: 54px;
+  margin-right: 40px;
+}
+@media (max-width: 1600px) {
+  nav {
+    margin-right: 20px;
+  }
+}
+/* Main menu styles
+========================================================*/
+.sf-menu {
+  text-align: center;
+}
+.sf-menu > li {
+  letter-spacing: -0.025em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+@media (max-width: 979px) {
+  .sf-menu > li {
+    margin-top: 0;
+  }
+}
+.sf-menu > li + li {
+  margin-left: 40px;
+}
+@media (max-width: 1600px) {
+  .sf-menu > li + li {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .sf-menu > li + li {
+    margin-left: 10px;
+  }
+}
+.sf-menu > li > a {
+  text-transform: uppercase;
+  font: 400 24px/24px "Lato", sans-serif;
+  display: block;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #bcbbc1;
+}
+@media (max-width: 1600px) {
+  .sf-menu > li > a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .sf-menu > li > a {
+    font-size: 13px;
+  }
+}
+.sf-menu > li > a:hover {
+  color: #ffffff;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.sf-menu > li > a:active {
+  color: #ffffff;
+}
+.sf-menu > li.active-menu-item > a {
+  background: #232323;
+  color: #ffffff;
+}
+@media only screen and (max-width: 767px) {
+  .sf-menu {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    float: none;
+    margin: 0;
+    clear: both;
+  }
+  .select-menu {
+    border-radius: none;
+    display: block;
+    text-transform: capitalize;
+    float: none;
+    color: #48c0db;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #ffffff;
+    font: 18px/28px "Roboto", sans-serif;
+    text-align: left;
+    border: 1px solid #c1c1c1;
+    padding: 7px 0;
+    position: relative;
+  }
+  .select-menu option {
+    text-align: left;
+    position: relative;
+  }
+}
+/*Core variables and mixins*/

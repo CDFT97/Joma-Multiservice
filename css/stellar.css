@@ -1,0 +1,32 @@
+/* Stellar(parallaxBG) styles
+========================================================*/
+.stellar-block {
+  background-attachment: fixed;
+  background-position: 50% 50% !important;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+@media only screen and (max-width: 1199px) {
+  .stellar-block {
+    background-attachment: scroll;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+  }
+}
+.stellar-block.first {
+  background-image: url(../images/page1_img15.png);
+}
+@media only screen and (max-width: 767px) {
+  .stellar-block.first {
+    background-image: url(../images/page1_img15_resize.png);
+  }
+}
+.stellar-block.second {
+  background-image: url(../images/page3_img1.png);
+}
+@media only screen and (max-width: 767px) {
+  .stellar-block.second {
+    background-image: url(../images/page1_img15_resize.png);
+  }
+}

@@ -980,3 +980,6 @@ body.hashAncor #content {
 .mb-2 {
   margin-bottom: 2em !important;
 }
+.pointer {
+  cursor: pointer;
+}
